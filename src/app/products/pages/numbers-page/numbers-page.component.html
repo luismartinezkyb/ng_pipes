@@ -1,0 +1,58 @@
+<p-panel [showHeader]="false" class="py-2">
+  <p-header>Pipes basicos</p-header>
+  <p>
+      Pipes incluidos en Angular - Usualmente en el common Module
+  </p>
+</p-panel>
+
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-4" >
+    <p-card header="Ventas Netas" subheader="del presente año">
+      {{totalSells | number:'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4" >
+    <p-card header="Ventas brutas" subheader="del presente año">
+      {{totalSells | currency:'USD'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4" >
+    <p-card header="Ventas brutas" subheader="del presente año">
+      {{totalSells | currency:'MXN':'symbol-narrow':'1.4-4'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4" >
+    <p-card header="Porcentaje de ventas" subheader="del presente año">
+      {{percent | percent:'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4" >
+    <p-card header="Ventas brutas" subheader="del presente año">
+      {{totalSells | percent:'1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6" >
+    <p-card header="Dates">
+      <ul>
+        <li>fecha</li>
+        <li>fecha | date</li>
+        <li>fecha | date:'short'</li>
+        <li>fecha | date:'long'</li>
+        <li>fecha | date:'MMMM'</li>
+        <li>fecha | date:'MMMM dd, yyyy'</li>
+        <li>fecha | date:'long':'GMT-6'</li>
+        <li>fecha | date:'long':'':'es-MX'</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6" >
+    <p-card header="Dates">
+      <ul>
+        
+        
+      </ul>
+    </p-card>
+  </div>
+  
+</div>
