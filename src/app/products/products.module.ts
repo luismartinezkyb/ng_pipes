@@ -7,19 +7,28 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { PanelModule } from 'primeng/panel';
 import { BasicPageComponent } from './pages/basics-pages/basic-pages.component';
+import { OrderPageComponent } from './pages/order/order.component';
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 @NgModule({
   declarations: [
     BasicPageComponent,
     NumbersPageComponent,
-    UncommonPageComponent
+    UncommonPageComponent,
+    OrderPageComponent,
+    ToggleCasePipe,
+    CanFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
     PrimeNgModule,
-    PanelModule
+    PanelModule,
+    
   ]
 })
 export class ProductsModule { }
